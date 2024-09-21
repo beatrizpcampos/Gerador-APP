@@ -2,11 +2,11 @@
 import { useState } from "react";
 import { Text, View, StyleSheet, Image, TouchableOpacity, Modal } from "react-native";
 import Slider from "@react-native-community/slider";
-import { ModalPassword } from "../components/modal"
+import { ModalPassword } from "../../components/modal"
 
 let charset = "ABCDEFGHIJKLMNOPQRSTUVWXYZ123456789"
 
-export default function Index() {
+export function Home() {
   const [size, setSize] = useState(10)
   const [passwordValue, setPasswordValue] = useState("")
   const [modalVisible, setModalVisible] = useState(false)
@@ -27,7 +27,7 @@ export default function Index() {
     <View style={styles.container}>
 
       <Image
-      source={require("../assets/images/logogerador.png")}
+      source={require("../../assets/logogerador.png")}
       style={styles.logo}
       />
 
